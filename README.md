@@ -868,8 +868,10 @@ Faker::Pokemon.location #=> "Pallet Town"
 
 ```ruby
 Faker::Shipping.fedex_account_number #=> "123456789"
+Faker::Shipping.fedex_invoice_number #=> "123456789"
 
 Faker::Shipping.ups_account_number #=> "ABC123"
+Faker::Shipping.ups_invoice_number #=> "ABC123246"
 ```
 
 Customization
