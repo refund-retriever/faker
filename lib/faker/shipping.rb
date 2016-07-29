@@ -9,7 +9,7 @@ module Faker
       end
 
       def ups_account_number
-
+        Faker::Lorem.characters(6).upcase
       end
 
       def fedex_invoice_number
