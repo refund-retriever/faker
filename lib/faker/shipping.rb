@@ -37,7 +37,7 @@ module Faker
         first_invoice_date = jan_first+(6-jan_first.wday)
         invoice_date_saturday = invoice_date + (6-invoice_date.wday)
         week_number = ((invoice_date_saturday - first_invoice_date).to_i / 7) + 1
-        week_number.to_s + invoice_date.year.to_s[-1..-1]
+        ("%02d" % week_number) + invoice_date.year.to_s[-1..-1]
       end
 
     end
